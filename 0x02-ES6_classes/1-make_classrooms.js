@@ -1,3 +1,5 @@
-import initializeRooms from './1-make_classrooms.js';
+import ClassRoom from './0-classroom';
 
-console.log(initializeRooms());
+export default function initializeRooms() {
+  return [19, 20, 34].map((value) => new ClassRoom(value));
+}
